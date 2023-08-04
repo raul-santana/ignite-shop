@@ -1,8 +1,8 @@
-<h1>Desafio - Ignite Shop</h1>h1>
+<h1>Desafio - Ignite Shop</h1>
 
 ![image](https://github.com/raul-santana/ignite-shop/assets/55468059/900e7e30-1720-445e-978c-f94391278fc3)
 
-<h2>Durante este desafio foi proposto o desenvolvimento das seguintes features:</h2>h2>
+<h2>Durante este desafio foi proposto o desenvolvimento das seguintes features:</h2>
 <br />
 
   ➡️ Carrinho
