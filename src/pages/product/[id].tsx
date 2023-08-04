@@ -1,13 +1,10 @@
 import { useCart } from "@/hooks/useCart"
 import { stripe } from "../../lib/stripe"
 import { Imagecontainer, ProductContainer, ProductDetail } from "@/styles/pages/product"
-import axios from "axios"
 import { GetStaticPaths, GetStaticProps } from "next"
 import Head from "next/head"
 import Image from "next/image"
 import { useRouter } from "next/router"
-import { handleClientScriptLoad } from "next/script"
-import { useState } from "react"
 import Stripe from "stripe"
 import { IProduct } from "@/contexts/CartContext"
 

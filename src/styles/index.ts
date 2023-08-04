@@ -31,5 +31,10 @@ export const {
             xl: '1.5rem',
             '2xl': '2rem'
         },
-    }
+    },
+    media: {
+        // bp1: '(max-width: 640px)',
+        bp1: '(max-width: 880px)',
+        bp3: '(min-width: 1024px)',
+    },
 })

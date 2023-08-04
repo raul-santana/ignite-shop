@@ -4,7 +4,7 @@ export const HeaderContainer = styled('header', {
     padding: '2rem 0',
     width: '100%',
     maxWidth: 1180,
-    margin: '0 auto',
+    margin: '0 auto', 
 
     display:'flex',
     alignItems: 'center',
@@ -12,6 +12,10 @@ export const HeaderContainer = styled('header', {
 
     button: {
         marginLeft: 'auto'
-    }
+    },
 
+    '@bp1':{
+        // justifyContent: 'space-between',
+        // padding: '2rem 0',
+    }
 })

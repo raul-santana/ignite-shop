@@ -9,6 +9,12 @@ export const ProductContainer = styled('main', {
     maxWidth: 1180,
     margin: '0 auto',
 
+    '@bp1': {
+        display: 'flex',
+        'flex-direction': 'column',
+        alignItems: 'center',
+    },
+
 })
 
 export const Imagecontainer = styled('div', {
@@ -71,5 +77,18 @@ export const ProductDetail = styled('div', {
             backgroundColor: '$green300',
         }
 
+    },
+
+    '@bp1': {
+        padding: '1.2rem',
+
+        p:{
+            marginTop: '2rem',
+        },
+
+        button:{
+            marginTop: '3rem',
+            marginBottom: '2.5rem',
+        }
     }
 })
