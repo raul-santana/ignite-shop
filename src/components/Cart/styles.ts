@@ -1,6 +1,7 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { styled } from "../../styles";
 
+
 export const CartContent = styled(Dialog.Content, {
   position: "fixed",
   top: 0,
@@ -28,6 +29,11 @@ export const CartContent = styled(Dialog.Content, {
     flex: 1,
     overflowY: "auto",
   },
+
+  '@bp1':{
+    width: "80vw",
+  }
+
 });
 
 export const CartClose = styled(Dialog.Close, {

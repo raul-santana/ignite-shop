@@ -13,9 +13,4 @@ export const HeaderContainer = styled('header', {
     button: {
         marginLeft: 'auto'
     },
-
-    '@bp1':{
-        // justifyContent: 'space-between',
-        // padding: '2rem 0',
-    }
 })

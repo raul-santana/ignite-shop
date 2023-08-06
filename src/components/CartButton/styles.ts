@@ -56,5 +56,6 @@ export const CartButtonContainer = styled("button", {
 
     '@bp1':{
         position: 'relative',
+        marginRight: '1.2rem',
     }
 })

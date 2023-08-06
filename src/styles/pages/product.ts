@@ -31,6 +31,8 @@ export const Imagecontainer = styled('div', {
 
     img: {
         objectFit: 'cover',
+        width: '100vw !important',
+        maxWidth: '520px',
     }
 })
 
