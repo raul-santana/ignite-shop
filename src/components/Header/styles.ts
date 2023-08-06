@@ -13,4 +13,11 @@ export const HeaderContainer = styled('header', {
     button: {
         marginLeft: 'auto'
     },
+
+    img: {
+        '@bp1':{
+            height: '45px',
+            marginLeft: '0.2rem',
+        },
+    }
 })
