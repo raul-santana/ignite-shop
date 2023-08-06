@@ -7,7 +7,7 @@ import { useCart } from '@/hooks/useCart';
 import { useState } from 'react';
 import axios from 'axios';
 
-export function Cart(){
+export function Cart({quantity} : {quantity: number}){
 
     const { cartItems, cartTotal, removeCartItem } = useCart()
     const cartQuantity = cartItems.length
@@ -40,7 +40,7 @@ export function Cart(){
     return(
         <Dialog.Root>
             <Dialog.Trigger asChild>
-                <CartButton />
+                <CartButton quantity={quantity}/>
             </Dialog.Trigger>
 
             <Dialog.Portal>

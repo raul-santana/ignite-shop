@@ -4,10 +4,13 @@ import Image from 'next/image'
 import { HeaderContainer } from "./styles";
 import { Cart } from "../Cart";
 import { useRouter } from "next/router";
+import { useCart } from "@/hooks/useCart";
 
 export function Header(){
 
     const { pathname } = useRouter()
+
+    const { cartTotalItems } = useCart()
 
     const showCartButton = pathname !== '/success'
 
@@ -17,7 +20,7 @@ export function Header(){
                 <Image src={logoImg} alt="" />
             </Link>
 
-            {showCartButton && <Cart />}
+            {showCartButton && <Cart quantity={cartTotalItems} />}
         </HeaderContainer>
     )
 }
