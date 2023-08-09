@@ -4,7 +4,7 @@ import { CartClose, CartContent, CartProduct, CartProductDetails, CartProductIma
 import { X } from 'phosphor-react';
 import Image from 'next/image';
 import { useCart } from '@/hooks/useCart';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 export function Cart({quantity} : {quantity: number}){
@@ -18,6 +18,12 @@ export function Cart({quantity} : {quantity: number}){
     }).format(cartTotal)
 
     const [isCreatingCheckoutSession, setisCreatingCheckoutSession] = useState(false)
+
+    const [blockBtnFinalization, setBlockBtnFinalization] = useState(false)
+
+    useEffect(()=>{
+        isCreatingCheckoutSession == true || cartQuantity < 1 ? setBlockBtnFinalization(true) : setBlockBtnFinalization(false)
+    },[isCreatingCheckoutSession, cartQuantity])
 
     async function handleCheckout(){
         try{
@@ -89,7 +95,7 @@ export function Cart({quantity} : {quantity: number}){
                             </div>
                         </FinalizationDetails>
 
-                        <button onClick={handleCheckout} disabled={isCreatingCheckoutSession}> Finalizar compra </button>
+                        <button onClick={handleCheckout} disabled={blockBtnFinalization}> Finalizar compra </button>
                     </CartFinalization>
 
                 </CartContent>

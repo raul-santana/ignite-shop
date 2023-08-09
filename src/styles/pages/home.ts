@@ -18,7 +18,7 @@ export const SliderContainer = styled('div', {
     },
 
     '@bp1':{
-        gap: '1.5rem',
+        gap: '1.2rem',
     }
 })
 
@@ -93,6 +93,23 @@ export const Product = styled('div', {
         minWidth: 140,
         height: 356,
         width: 240,
+
+        footer:{
+            transform: 'translateY(0%)',
+            opacity: 1,
+
+            button:{
+                display: 'none',
+            },
+
+            strong:{
+                overflow: 'hidden',
+                'text-overflow': 'ellipsis',
+                display: '-webkit-box',
+                '-webkit-box-orient': 'vertical',
+                '-webkit-line-clamp': 2,
+            },
+        },
     }
 
 })

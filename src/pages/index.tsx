@@ -68,12 +68,12 @@ export default function Home({ products }: HomeProps) {
                       <Product className="embla__slide">
                         <Image src={product.imageUrl} width={520} height={480} alt="" />
 
-                        <footer>
-                          <div>
-                            <strong> { product.name } </strong>
-                            <span> { product.price } </span>
-                          </div>
-                          <CartButton  color={'green'} size={'large'} disabled={checkIfItemAlreadyExists(product.id)} onClick={(e) => handleAddToCart(e, product)} />
+                        <footer>                        
+                            <div>
+                              <strong> { product.name } </strong>
+                              <span> { product.price } </span>
+                            </div>
+                            <CartButton  color={'green'} size={'large'} disabled={checkIfItemAlreadyExists(product.id)} onClick={(e) => handleAddToCart(e, product)} />
                         </footer>
                       </Product>
                     </Link>
