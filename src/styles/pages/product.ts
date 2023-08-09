@@ -82,7 +82,7 @@ export const ProductDetail = styled('div', {
     },
 
     '@bp1': {
-        padding: '1.2rem',
+        padding: '0 1.2rem',
 
         p:{
             marginTop: '2rem',

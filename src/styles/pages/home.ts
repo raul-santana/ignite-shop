@@ -16,6 +16,10 @@ export const SliderContainer = styled('div', {
     '.embla_slide': {
         minWidth: '43.5rem',
     },
+
+    '@bp1':{
+        gap: '1.5rem',
+    }
 })
 
 export const Product = styled('div', {
@@ -33,7 +37,10 @@ export const Product = styled('div', {
     justifyContent: 'center',
 
     img:{
-        objectFit: 'cover'
+        objectFit: 'cover',
+        '@bp1':{
+            height:320,
+        }
     },
 
     footer: {
@@ -79,6 +86,13 @@ export const Product = styled('div', {
             transform: 'translateY(0%)',
             opacity: 1
         },
+    },
+
+    '@bp1':{
+        minHeight: 256,
+        minWidth: 140,
+        height: 356,
+        width: 240,
     }
 
 })
